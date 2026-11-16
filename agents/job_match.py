@@ -8,10 +8,12 @@ It reads two text files and asks Claude how well they match, which skills
 line up, what's missing, and how to word your real experience for this job.
 """
 
+import os
 import sys
 from pathlib import Path
 
 import anthropic
+from dotenv import load_dotenv
 
 MODEL = "claude-opus-5-5"
 
@@ -43,7 +45,13 @@ def main() -> None:
     resume = read_text(resume_path)
     job = read_text(job_path)
 
-    client = anthropic.Anthropic()  # uses ANTHROPIC_API_KEY from your computer
+    # Your API key lives in the .env file in this folder (never saved to GitHub).
+    load_dotenv(repo / ".env")
+    if not os.environ.get("ANTHROPIC_API_KEY", "").strip():
+        sys.exit("No API key found. Open the .env file in this folder, paste your key after "
+                 "ANTHROPIC_API_KEY=, and save.")
+
+    client = anthropic.Anthropic()  # reads ANTHROPIC_API_KEY
 
     try:
         response = client.beta.messages.create(
@@ -60,7 +68,7 @@ def main() -> None:
             }],
         )
     except anthropic.AuthenticationError:
-        sys.exit("Your API key isn't working. Check step 3 on the Claude Code Setup page.")
+        sys.exit("Your API key isn't working. Check that the .env file has your whole key, then save it.")
     except anthropic.PermissionDeniedError:
         sys.exit("Your API key can't make this request. Ask your instructor.")
     except anthropic.RateLimitError:

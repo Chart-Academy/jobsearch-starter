@@ -8,12 +8,13 @@ This repo belongs to one student. Together we build small Python agents that hel
 - When something fails, explain the error simply and fix it together.
 
 ## Project setup
-- Python 3.12. The virtual environment is `.venv` in this folder. Activate it before running code:
+- Python 3 (3.10 or newer, already installed on class computers). The virtual environment is `.venv` in this folder. Activate it before running code:
   - Mac: `source .venv/bin/activate`
   - Windows: `.venv\Scripts\Activate.ps1`
 - When you add a package, add it to `requirements.txt` too, so it installs on the student's other computers.
 - Agents go in `agents/`. Sample inputs go in `data/`.
-- Agents call the Claude API with the `anthropic` package. The API key comes from the `ANTHROPIC_API_KEY` environment variable. Use `anthropic.Anthropic()` with no arguments.
+- Agents call the Claude API with the `anthropic` package. The student's API key is in `.env` in this folder (`ANTHROPIC_API_KEY=...`). Load it with `python-dotenv` (`load_dotenv()`), then use `anthropic.Anthropic()` with no arguments.
+- `.env` is git-ignored and stays on this computer. On a new computer the student copies `.env.example` to `.env` and pastes their key in. If `.env` is missing or empty, tell the student to do that; never ask for the key in chat.
 
 ## Rules
 - **Never** write the API key into any file, print it, or ask the student to paste it into the chat.
