@@ -1,0 +1,26 @@
+SAMPLE JOB POSTING: replace this with a real posting you found on Indeed or DC Government Careers.
+
+Junior SOC Analyst (Tier 1)
+Example Security Services · Washington, DC (on-site) · Full-time
+
+About the role
+Join our Security Operations Center to watch for and respond to security alerts
+for our clients. You'll learn on the job from senior analysts.
+
+What you'll do
+- Monitor alerts in our SIEM and sort them by priority
+- Investigate suspicious emails and report phishing
+- Open, update, and close tickets with clear notes
+- Escalate confirmed incidents to Tier 2 analysts
+- Follow written procedures and help improve them
+
+Requirements
+- CompTIA Security+ (or able to earn it within 90 days of hire)
+- Basic understanding of networking: TCP/IP, DNS, ports
+- Familiarity with Windows and Active Directory account management
+- Clear written communication
+- Able to work rotating shifts
+
+Nice to have
+- Help desk or IT support experience
+- Exposure to a SIEM such as Splunk or Microsoft Sentinel

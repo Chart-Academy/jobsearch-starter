@@ -1,0 +1,17 @@
+# Secrets: never commit these
+.env
+.env.*
+*.key
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Claude Code local settings
+.claude/settings.local.json
+
+# Mac / Windows clutter
+.DS_Store
+Thumbs.db

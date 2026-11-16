@@ -1,0 +1,27 @@
+SAMPLE RÉSUMÉ: replace this with your own. Leave out your SSN, birth date, and home address.
+
+Jordan Rivera
+Washington, DC · jordan.rivera.sample@gmail.com
+
+SUMMARY
+Detail-oriented IT support worker studying for CompTIA Security+. Three years of
+customer-facing work, including resetting accounts and troubleshooting devices.
+
+EXPERIENCE
+Help Desk Assistant (part-time), Community Library, Washington, DC — 2024 to present
+- Answered about 25 patron and staff tech questions a day, in person and by phone
+- Reset passwords and unlocked accounts in the library's account system
+- Set up and imaged 30 public computers; kept a log of hardware issues
+- Spotted and reported two phishing emails sent to staff
+
+Sales Associate, Corner Electronics, Washington, DC — 2021 to 2024
+- Helped customers choose laptops and phones; set up new devices in store
+- Handled returns and kept the stock count accurate
+
+EDUCATION & TRAINING
+Chart Academy, AI for Workforce Readiness and Security+ prep — 2026 (in progress)
+High school diploma — 2021
+
+SKILLS
+Windows 10/11, macOS, password resets, basic networking (Wi-Fi, IP addresses),
+Microsoft 365, Google Workspace, customer service, ticket logging
