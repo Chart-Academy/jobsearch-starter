@@ -38,7 +38,7 @@ Help me fill in data/about_me.md. Go through it one section at a time: ask me th
 
 ## Prompt 4: Build the Profile Builder agent
 ```
-Build agents/build_profile.py, my Profile Builder agent. Before you build it, ask me one question: in my own words, what should this agent do for me? Wait for my answer.
+Build agents/build_profile.py, my Profile Builder agent.
 
 What it does: reads data/resume.txt and data/about_me.md and saves my skills profile to data/profile.json.
 How to build it:

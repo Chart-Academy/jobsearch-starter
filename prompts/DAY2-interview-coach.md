@@ -26,7 +26,7 @@ Read CLAUDE.md, NOTES.md, and prompts/DAY2-interview-coach.md. In five sentences
 
 ## Prompt 2: Build the Interview Coach agent
 ```
-Build agents/interview_coach.py, my Interview Coach agent. Before you build it, ask me one question: in my own words, what kind of interviewer would help me most? Wait for my answer, and use it in the interviewer's instructions.
+Build agents/interview_coach.py, my Interview Coach agent.
 
 It has two functions that the hub will use. Both use the helpers in agents/common.py, the shared RULES, and effort "low".
 - next_question(job, asked): acts as a friendly hiring manager for that job (or a general entry-level job if job is None). It asks one question in one or two short sentences that sound natural read out loud, mixes common questions ("Tell me about yourself") with behavioral ones ("Tell me about a time you...") and questions about the job's real requirements, and never repeats a question in asked. It returns the question as plain text.
