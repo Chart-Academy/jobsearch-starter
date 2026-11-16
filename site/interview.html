@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Interview Practice</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <span class="avatar" aria-hidden="true">🧭</span>
+      <div>
+        <h1>My Job Search Hub</h1>
+        <p>Practice out loud. Get STAR feedback after every answer.</p>
+      </div>
+      <nav><a href="index.html">Jobs</a><a href="interview.html" class="on">Interview practice</a></nav>
+    </div>
+  </header>
+  <main class="wrap">
+    <h2>Set up your practice interview</h2>
+    <div class="card">
+      <div class="row">
+        <label>Job: <select id="job"><option value="">General practice</option></select></label>
+        <label>Questions: <select id="count"><option>3</option><option selected>5</option><option>6</option></select></label>
+        <label><input type="checkbox" id="speak" checked> Read questions out loud</label>
+        <button id="start">Start interview</button>
+      </div>
+      <p class="note" id="voice-note">Use Chrome or Edge to answer out loud. You can always type your answer instead.</p>
+    </div>
+
+    <section id="session" hidden>
+      <h2 id="progress">Question 1</h2>
+      <div class="card">
+        <div class="interviewer">
+          <span class="avatar" aria-hidden="true">🧑‍💼</span>
+          <div>
+            <p class="note" id="interviewer-name">Interviewer</p>
+            <p class="question" id="question">…</p>
+            <div class="row"><button class="light" id="repeat">Say it again</button></div>
+          </div>
+        </div>
+        <h3>Your answer</h3>
+        <div class="row"><button class="mic" id="mic">🎤 Start talking</button><span class="note" id="mic-note"></span></div>
+        <textarea id="answer" rows="6" placeholder="Your answer appears here as you talk. Fix any words it got wrong, then ask for feedback."></textarea>
+        <div class="row"><button id="feedback-btn">Get STAR feedback</button><span class="note" id="wait"></span></div>
+      </div>
+      <div class="card" id="feedback" hidden style="margin-top:14px"></div>
+      <div class="row">
+        <button id="next" hidden>Next question</button>
+        <button class="light" id="finish" hidden>Finish and save</button>
+      </div>
+    </section>
+
+    <h2>My practice history</h2>
+    <div class="card" id="history"><p class="empty">No practice interviews yet.</p></div>
+  </main>
+  <script src="interview.js"></script>
+</body>
+</html>

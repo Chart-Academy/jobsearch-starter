@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Job Search Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <span class="avatar" aria-hidden="true">🧭</span>
+      <div>
+        <h1>My Job Search Hub</h1>
+        <p id="greeting">Let's find a job that fits your life.</p>
+      </div>
+      <nav><a href="index.html" class="on">Jobs</a><a href="interview.html">Interview practice</a></nav>
+    </div>
+  </header>
+  <main class="wrap">
+    <section class="stats" id="stats"></section>
+
+    <h2>What I'm looking for</h2>
+    <div class="card" id="profile"><p class="empty">Run <code>python agents/build_profile.py</code> to build your profile.</p></div>
+
+    <h2>My top 10 openings</h2>
+    <p class="note">Fit scores and chances are estimates from your agents. Open each listing yourself, check it against your must-haves, and mark it checked.</p>
+    <div class="jobs" id="top10"><p class="empty">Run <code>python agents/find_openings.py</code> and then <code>python agents/rank_openings.py</code>.</p></div>
+    <details id="others" class="card" style="margin-top:14px"><summary>Openings that didn't make the list</summary><div></div></details>
+
+    <h2>My application tracker</h2>
+    <div class="scroll"><table id="tracker"></table></div>
+    <div class="row">
+      <button id="save-tracker">Save tracker</button>
+      <button class="light" id="add-row">Add a job I found</button>
+      <button class="light" id="download">Download for Google Sheets</button>
+      <span id="tracker-msg" class="note"></span>
+    </div>
+
+    <h2>My documents</h2>
+    <div class="docs">
+      <div class="card"><ul id="doc-list"></ul>
+        <p class="note">Résumés go in <code>data/resumes/</code>. Cover letters go in <code>data/cover_letters/</code>.</p></div>
+      <div class="card"><pre class="doc" id="doc-view">Pick a document to read it here.</pre></div>
+    </div>
+  </main>
+  <script src="hub.js"></script>
+</body>
+</html>
