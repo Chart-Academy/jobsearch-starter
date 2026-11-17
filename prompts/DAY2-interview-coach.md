@@ -12,11 +12,15 @@ That didn't work. Here is what I saw: [paste the error or describe what happened
 ---
 
 ## Start of class (type these in the terminal)
+Change `jobsearch-yourname` to your repo's name (the one you made on the setup page), then run the line for your computer.
+
+Mac:
 ```
-cd ~/Documents/<your-repo-name>
-git pull
-source .venv/bin/activate        # Windows: .venv\Scripts\Activate.ps1
-claude
+cd ~/Documents/jobsearch-yourname && git pull && source .venv/bin/activate && pip install -r requirements.txt && claude
+```
+Windows:
+```
+cd ~\Documents\jobsearch-yourname; git pull; .venv\Scripts\Activate.ps1; pip install -r requirements.txt; claude
 ```
 
 ## Prompt 1: Pick up where you left off
