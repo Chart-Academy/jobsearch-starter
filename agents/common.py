@@ -14,7 +14,7 @@ from pathlib import Path
 import anthropic
 from dotenv import load_dotenv
 
-MODEL = "claude-opus-5-5"
+MODEL = "claude-sonnet-5-5"
 REPO = Path(__file__).resolve().parent.parent
 DATA = REPO / "data"
 
